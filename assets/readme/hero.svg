@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" role="img" aria-labelledby="hero-title hero-desc">
+  <title id="hero-title">HappyTrip — 把旅行照片，变成旅途纪念。</title>
+  <desc id="hero-desc">面向 Codex 的旅行照片创意 Skill，包含十八种玩法，可修整旅行照片，制作创意纪念图与地图海报。</desc>
+  <!-- Warm travel-journal paper; photo, postcard and map are mode cues, not example outputs. -->
+  <rect width="1200" height="300" rx="18" fill="#F6F2E9"/>
+
+  <g id="title-block" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif">
+    <text x="64" y="61" fill="#687976" font-size="17" font-weight="600" letter-spacing="2.2">18 MODES · CODEX SKILL</text>
+    <text x="59" y="168" fill="#263E3B" font-size="98" font-weight="750" letter-spacing="-5">HappyTrip</text>
+    <text x="64" y="224" fill="#263E3B" font-size="31" font-weight="500" letter-spacing="1">把旅行照片，变成旅途纪念。</text>
+  </g>
+
+  <g id="travel-photo-modes" transform="translate(850 57)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" fill="none" stroke="#263E3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <g id="photo-cue">
+      <rect x="0" y="4" width="37" height="29" rx="3"/>
+      <path d="M5 4 L9 0 H26 L31 4"/>
+      <circle cx="18.5" cy="18.5" r="8"/>
+      <path d="M30 10 H31" stroke="#C96547" stroke-width="3"/>
+      <text x="58" y="27" fill="#263E3B" stroke="none" font-size="25" font-weight="500">照片修整</text>
+    </g>
+    <g id="postcard-cue" transform="translate(0 63)">
+      <rect x="0" y="0" width="38" height="29" rx="2"/>
+      <path d="M21 6 V23 M26 15 H33 M26 21 H33"/>
+      <rect x="27" y="5" width="6" height="6" rx="0.5" stroke="#C96547"/>
+      <path d="M5 21 L10 14 L14 18 L17 13"/>
+      <text x="58" y="23" fill="#263E3B" stroke="none" font-size="25" font-weight="500">创意纪念</text>
+    </g>
+    <g id="map-cue" transform="translate(0 123)">
+      <path d="M1 5 L12 1 L25 5 L38 1 V29 L25 33 L12 29 L1 33 Z M12 1 V29"/>
+      <path d="M24 14 C19 7 29 4 31 10 C32 13 27 18 27 18 Z" fill="#F6F2E9" stroke="#C96547"/>
+      <circle cx="26.5" cy="10.8" r="1.6" fill="#C96547" stroke="none"/>
+      <path d="M25 22 V33"/>
+      <text x="58" y="26" fill="#263E3B" stroke="none" font-size="25" font-weight="500">地图海报</text>
+    </g>
+  </g>
+
+  <path d="M64 267 H1136" stroke="#687976" stroke-opacity="0.23"/>
+  <path d="M64 267 H146" stroke="#C96547" stroke-width="2"/>
+</svg>

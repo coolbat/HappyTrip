@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "date": "2026-10-02",
+  "purpose": "README showcase using licensed public reference photos",
+  "attempts": [
+    {
+      "mode": "A02",
+      "status": "rejected",
+      "reason": "Generated sky texture was not in the original; omitted from showcase",
+      "prompt": "Use case: lighting-weather. Asset type: real A02 photo editing example for the HappyTrip GitHub README. Input image is the EDIT TARGET: the licensed real Golden Gate Bridge landscape from Marin Headlands. Apply restrained professional photographic color and exposure correction ONLY: improve shadow detail in the dark foreground hill and right-side foliage, gently correct cool haze and white balance, recover natural separation between blue bay, green headlands and red bridge, control sky highlights. Keep the existing daytime, clear blue sky and weather. Preserve exactly the original wide framing, 4:3 aspect ratio, camera viewpoint, bridge shape, both towers, all cables, city skyline, hills, sea and right-edge foliage; do not add, remove, move, crop or replace scene elements. Natural travel photography, not HDR, not cinematic orange-teal, no oversaturation, no glow, no artificial sun rays, no text, no graphic frame. This is an editing demonstration, not evidence of a user's journey."
+    },
+    {
+      "mode": "B04",
+      "status": "visually_reviewed",
+      "prompt": "Use case: stylized-concept. Asset type: B04 travel glass globe example for the HappyTrip GitHub README. Input image is a REFERENCE for the architecture, colors and recognizable waterfront of San Francisco Pier 39: the long timber pier, sunlit ochre and pale cream two-story waterfront buildings, railings and blue bay. Reimagine these key recognizable elements as a finely crafted miniature travel souvenir inside one perfectly clear closed glass globe on a stable low circular dark green ceramic base. The pier should visibly project over miniature water within the globe, with enough breathing room above buildings. Photorealistic studio product photograph, square composition, the complete globe and base centered with generous margins, warm cream background, subtle contact shadow, soft side illumination and realistic glass refraction and thickness; highlights must not obscure the little waterfront buildings. No people, no snow, no snowflakes, no glitter, no floating particles, no extra landmarks. No typography or labels anywhere. Distinguish the clear glass shell and tactile miniature wood, ceramic and water surfaces. This is a creative souvenir interpretation of the reference scene, not a factual real-world photograph."
+    },
+    {
+      "mode": "A05",
+      "status": "visually_reviewed",
+      "prompt": "Use case: style-transfer. Asset type: HappyTrip A05 travel watercolor postcard, intentionally text-free edition for a GitHub README example. Input image is the REFERENCE SCENE: the real licensed Golden Gate Bridge landscape viewed from Marin Headlands, with two red suspension bridge towers, bay water, green foreground slopes, the city in the distance and foliage at far right. Turn the recognizable scene and camera viewpoint into delicate transparent watercolor on warm ivory cotton paper. Output a flat horizontal 3:2 postcard design: the watercolor occupies the RIGHT approximately 60 percent of the card, softly fading into irregular wet-on-wet edges with fine granulation and handpainted red bridge details; leave the LEFT roughly 35 percent elegantly open as intentionally blank writing space. Nothing bleeds off any canvas edge. Place exactly three small understated square pigment swatches near the lower left, in muted bay blue, headland green and brick red drawn from the source scene. The bridge structure, both towers and span must be recognizable and fit inside the painted portion. Restrained, airy, collectible travel stationery. Do not add any text at all: no title, no date, no numbers, no handwriting, no watermark. No picture frame, no desk, no props, no hand holding it, no mockup perspective, no border shadow. This is a watercolor interpretation, not a factual photograph or an actual user's trip."
+    }
+  ]
+}

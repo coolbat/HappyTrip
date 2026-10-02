@@ -1,0 +1,88 @@
+{
+  "date": "2026-10-02",
+  "purpose": "README showcase",
+  "host_tool": "built-in image_gen",
+  "native_image_calls_this_run": 3,
+  "accepted_native_images": 2,
+  "rejected_native_images": 1,
+  "user_art_acceptance": "pending",
+  "scope": "Individual publicly sourced examples; not the complete 18-mode visual acceptance matrix.",
+  "cases": [
+    {
+      "mode": "A05",
+      "source": {
+        "file": "docs/examples/golden-gate-source.jpg",
+        "sha256": "842aaf635c2220335089250f6bf155a007ff82dcf3353fe3e08e25262845f091",
+        "size": [
+          1280,
+          960
+        ]
+      },
+      "output": {
+        "file": "docs/examples/a05-watercolor-postcard.png",
+        "sha256": "43802473f741cfeb960ea440324866ca4612fb17a81fcf35c95a42853a7224bc",
+        "size": [
+          1536,
+          1024
+        ]
+      },
+      "method": "native image tool, watercolor interpretation, intentionally no text",
+      "visual_review": "pass_for_showcase",
+      "observations": [
+        "Recognizable two-tower bridge, bay and green headland in watercolor.",
+        "Warm textured paper, left writing area, exactly three blue/green/red swatches.",
+        "No date, title, frame, product mockup or fabricated trip facts."
+      ],
+      "source_credit": "Wattewyl / Wikimedia Commons / CC BY 3.0; derivative modified from source."
+    },
+    {
+      "mode": "B04",
+      "source": {
+        "file": "docs/examples/pier39-source.jpg",
+        "sha256": "9cb5e3035497ebdc8485fefbae6bd22d8a27574d1769d77b5e3a95db6c0b2583",
+        "size": [
+          1280,
+          853
+        ]
+      },
+      "output": {
+        "file": "docs/examples/b04-travel-globe.png",
+        "sha256": "2b1f16ede38fa38f5608f8fbec6355a8ee94e880bd833069c5d93b7dd1b96d18",
+        "size": [
+          1254,
+          1254
+        ]
+      },
+      "method": "native image tool, creative miniature souvenir interpretation",
+      "visual_review": "pass_for_showcase",
+      "independent_agent_review": "pass",
+      "observations": [
+        "Glass sphere is closed and visibly supported by a ceramic base with contact shadow.",
+        "Pier timber buildings, railings, white boat and mast remain recognizable.",
+        "No snow, particles or added labels."
+      ],
+      "source_credit": "Daderot / Wikimedia Commons / CC0."
+    },
+    {
+      "mode": "B22",
+      "output": {
+        "file": "docs/examples/b22-map-preview.png",
+        "sha256": "5c7ccf8ee2dfbc319ac99de0684c8801a979decdd8a4ee0a44894cc895ea74d3",
+        "size": [
+          1600,
+          2200
+        ]
+      },
+      "method": "existing deterministic geographic poster with original photo cards and USGS basemap",
+      "visual_review": "previously_reviewed",
+      "report": "checks/B22-MAP-CORRECTION.md",
+      "route_semantics": "Station connections, not road navigation or a real user journey."
+    }
+  ],
+  "rejected_attempts": [
+    {
+      "mode": "A02",
+      "reason": "Output added sky texture, outside exposure/color-only scope. Candidate retained locally and excluded from repository."
+    }
+  ]
+}
