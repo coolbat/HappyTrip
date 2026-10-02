@@ -18,6 +18,37 @@
       "mode": "A05",
       "status": "visually_reviewed",
       "prompt": "Use case: style-transfer. Asset type: HappyTrip A05 travel watercolor postcard, intentionally text-free edition for a GitHub README example. Input image is the REFERENCE SCENE: the real licensed Golden Gate Bridge landscape viewed from Marin Headlands, with two red suspension bridge towers, bay water, green foreground slopes, the city in the distance and foliage at far right. Turn the recognizable scene and camera viewpoint into delicate transparent watercolor on warm ivory cotton paper. Output a flat horizontal 3:2 postcard design: the watercolor occupies the RIGHT approximately 60 percent of the card, softly fading into irregular wet-on-wet edges with fine granulation and handpainted red bridge details; leave the LEFT roughly 35 percent elegantly open as intentionally blank writing space. Nothing bleeds off any canvas edge. Place exactly three small understated square pigment swatches near the lower left, in muted bay blue, headland green and brick red drawn from the source scene. The bridge structure, both towers and span must be recognizable and fit inside the painted portion. Restrained, airy, collectible travel stationery. Do not add any text at all: no title, no date, no numbers, no handwriting, no watermark. No picture frame, no desk, no props, no hand holding it, no mockup perspective, no border shadow. This is a watercolor interpretation, not a factual photograph or an actual user's trip."
+    },
+    {
+      "mode": "A01",
+      "run": "common-scenarios-expansion",
+      "source": "docs/examples/louvre-source.jpg",
+      "status": "visually_reviewed_after_masked_composition",
+      "prompt": "Use case: precise-object-edit. Asset type: HappyTrip A01 tourist-removal demonstration. Input image is the EDIT TARGET: the real Louvre courtyard photograph with glass pyramid, palace facades, equestrian statue at right and numerous tourists across the lower third. Remove ALL real people in the plaza, both close foreground groups and distant people/queues, as well as their bags, unattended goods placed by them and their personal cast shadows. There is no portrait subject or companion to retain in this demonstration. Keep the horse-and-rider STATUE at the right because it is fixed architectural art. Preserve the original exact framing, slightly angled composition, palace and roof silhouettes, pyramid location and every structural glass edge, metal crowd barriers, blue sky, light direction, architectural shadows and cobblestone perspective. Do not straighten or crop the photograph. Reconstruct only the ground or background previously covered by the people, using continuous plausible paving and matching shadows; do not add new objects or artificial people. Do not remove barriers, lamps, trees, flags or the statue. No relighting, no color correction, no beautification. The large environmental shadows crossing the foreground must remain; remove only small person-specific shadows. Output the complete 3:2 photograph, no text or frame."
+    },
+    {
+      "mode": "A02",
+      "run": "common-scenarios-expansion",
+      "source": "docs/examples/pier39-source.jpg",
+      "status": "rejected",
+      "reason": "Fine people details and textures were redrawn; not a suitable conservative correction example.",
+      "prompt": "Use case: lighting-weather. Asset type: HappyTrip A02 natural photographic correction example. Image 1 is the EDIT TARGET, not inspiration. Apply a gentle neutral color grade to this exact Pier 39 photograph. Only adjust white balance, tonal curves, highlight compression and shadow exposure. The original has a strong yellow/orange cast: slightly neutralize the cream-white facade/window trim and blue water while retaining the real warm sunlight; gently open under-pier shadows without inventing hidden detail. Keep every original pixel structure, edge, object, building, window, railing, dock post, boat, mast and the existing water ripples in exactly its original position. Preserve the exact 1280:853 composition and camera angle. Do not regenerate or reinterpret the architecture or text signs. Keep the sky's original featureless soft gradient: absolutely NO clouds, cloud streaks, birds, sun or new sky texture. Do not remove people, boats or other objects. Do not change season, weather or time of day; no artificial sunrays, HDR, glow or oversharpening. Conservative photographic tonal correction only. Output only the corrected photograph without frame, title or comparison labels."
+    },
+    {
+      "mode": "B01",
+      "run": "common-scenarios-expansion",
+      "source": "docs/examples/golden-gate-source.jpg",
+      "status": "visually_reviewed_after_original_photo_composition",
+      "transparent_background": true,
+      "prompt": "Use case: product-mockup. Asset type: one isolated souvenir fridge magnet for HappyTrip B01. Image 1 is a SCENE REFERENCE: the Golden Gate Bridge from Marin Headlands with two red suspension towers, blue bay, green headlands and distant city. Extract these recognizable elements into one beautifully crafted shallow relief fridge magnet, a tangible collectible object with clear solid 5–8mm ceramic/resin edge thickness, subtly glazed red bridge, blue enamel water and soft green headlands. Use a cohesive organic postcard-shaped silhouette with rounded edges, shown almost front-on with slight perspective just enough to reveal thickness; no dangling pieces, no extra repeated towers. This should look like a real small souvenir magnet, not an entire photoreal landscape. Isolated on genuinely transparent background with a subtle contact shadow, whole magnet visible with margins, landscape 3:2 composition. No letters, captions, logos, dates or price labels. No refrigerator, hands, packaging or desk. Generate ONLY the magnet asset, never the original photo or a comparison poster; the unchanged source photograph will be inserted separately by the project compositor."
+    },
+    {
+      "mode": "A02",
+      "run": "common-scenarios-expansion",
+      "source": "docs/examples/golden-gate-source.jpg",
+      "status": "accepted_with_warning_for_showcase",
+      "warning": "Fine textures may be reinterpreted; not strict fidelity acceptance.",
+      "prompt": "Use case: lighting-weather. Perform a MINIMAL photographic tone correction of the supplied Golden Gate Bridge photograph. Image 1 is the actual edit target. Keep absolutely all picture content and composition exactly the same, 4:3. This is not a creative remake. Mildly lift the dark green foreground hill and right-edge tree shadows, and gently neutralize the overall cool cast; maintain natural blue water and green vegetation. The clean empty sky must remain the SAME perfectly clear soft blue gradient from the original: zero clouds, zero wispy streaks, no new texture, no birds, no sun. Do not add light rays or change the time or weather. Keep both bridge towers, every cable, the bridge span, distant buildings, shoreline, water and foliage in exactly their original position and size. Do not add boats or people or anything else. Do not crop, reframe, sharpen by inventing texture, enlarge or redesign any subject. Prefer a subtle improvement over a dramatic appearance. Only deliver the adjusted photo; no labels or comparison layout."
     }
   ]
 }

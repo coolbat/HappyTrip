@@ -1,0 +1,168 @@
+{
+  "date": "2026-10-02",
+  "tool": "happytrip_runtime.compositor.compose",
+  "note": "Copied runtime checks plus separate visual review. Local working assets are not distributed. Font supplied by the local macOS system; not bundled.",
+  "cases": [
+    {
+      "mode": "A01",
+      "output": "docs/examples/a01-cleanup.png",
+      "output_sha256": "ac6bdfbb40d6fa26b7b5f28b6234d59c34c2d0fe46a8b9a2b3c919cdbf6ea8c4",
+      "size": [
+        1600,
+        1067
+      ],
+      "runtime_status_at_composition": "candidate",
+      "runtime_visual_review": "not_run",
+      "subsequent_visual_review": "pass_for_showcase",
+      "independent_agent_review": "pass",
+      "checks": [
+        {
+          "name": "protected_pixels",
+          "status": "pass",
+          "reason": "Pixels outside the effective mask are identical.",
+          "changed_pixels": 0
+        }
+      ],
+      "provenance": [
+        {
+          "photo_id": "source",
+          "input_sha256": "e7549aba2faf7a2c973b9f8e74d2996b740e5af46ccc5bc2441dc620981d786f",
+          "working_sha256": "02947ab060dd368d9479e3172a1b5b4209caed28ff15110768747390da13141d",
+          "source_kind": "registered_original",
+          "kind": "base"
+        },
+        {
+          "kind": "masked_edit",
+          "effective_mask_sha256": "432e6c5263456b1507ddf3210fb6368ec4ae9ca7a462a519ccc43784305aad2b",
+          "candidate_sha256": "b438a3a839a8f0f03c9abf996fdd76390f7718bfa135c0c3c9574895c53abdb8"
+        }
+      ],
+      "effective_mask": "docs/examples/a01-cleanup-effective-mask.png",
+      "mask_layout": {
+        "protected_rows_inclusive": [
+          0,
+          703
+        ],
+        "feather_rows_inclusive": [
+          704,
+          721
+        ],
+        "generated_rows_inclusive": [
+          722,
+          1066
+        ]
+      }
+    },
+    {
+      "mode": "B01",
+      "output": "docs/examples/b01-magnet-poster.png",
+      "output_sha256": "0f37bf8259eff8d18048f1ef5d732afaae36e56557ed40ffeebe9608c27986ad",
+      "size": [
+        1200,
+        1600
+      ],
+      "runtime_status_at_composition": "candidate",
+      "runtime_visual_review": "not_run",
+      "subsequent_visual_review": "pass_for_showcase",
+      "independent_agent_review": "pass",
+      "checks": [
+        {
+          "name": "source_provenance",
+          "status": "pass",
+          "reason": "Every source-photo slot was verified against its registered original."
+        }
+      ],
+      "provenance": [
+        {
+          "kind": "exact_text",
+          "text": "从旅途，到冰箱上",
+          "box": [
+            0.08,
+            0.035,
+            0.84,
+            0.045
+          ],
+          "font_name": "STHeiti Medium.ttc"
+        },
+        {
+          "kind": "exact_text",
+          "text": "金门大桥  ·  原片与立体纪念物",
+          "box": [
+            0.08,
+            0.09,
+            0.84,
+            0.028
+          ],
+          "font_name": "STHeiti Medium.ttc"
+        },
+        {
+          "kind": "generated_layer",
+          "sha256": "54946527a214e641497964d243b6e3388a26438daf10c16373be7c58abd3dcd7",
+          "source_photo_ids": [
+            "source"
+          ],
+          "fit": "contain",
+          "source_size": [
+            1536,
+            1024
+          ],
+          "placed_box_px": [
+            138,
+            208,
+            924,
+            616
+          ],
+          "scale": [
+            0.6015625,
+            0.6015625
+          ],
+          "slot_box": [
+            0.1,
+            0.13,
+            0.8,
+            0.385
+          ]
+        },
+        {
+          "kind": "exact_text",
+          "text": "公开原片 · 等比完整保留",
+          "box": [
+            0.08,
+            0.54,
+            0.84,
+            0.025
+          ],
+          "font_name": "STHeiti Medium.ttc"
+        },
+        {
+          "photo_id": "source",
+          "input_sha256": "842aaf635c2220335089250f6bf155a007ff82dcf3353fe3e08e25262845f091",
+          "working_sha256": "225672f1c5094ac10156ab8d37cedc371c7ebfa850896069abcdc99bdbf09d52",
+          "source_kind": "registered_original",
+          "fit": "contain",
+          "source_size": [
+            1280,
+            960
+          ],
+          "placed_box_px": [
+            210,
+            936,
+            779,
+            584
+          ],
+          "scale": [
+            0.60859375,
+            0.6083333333333333
+          ],
+          "slot_box": [
+            0.08,
+            0.585,
+            0.84,
+            0.365
+          ],
+          "kind": "source_photo"
+        }
+      ]
+    }
+  ]
+}

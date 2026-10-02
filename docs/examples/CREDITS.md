@@ -1,6 +1,10 @@
-# San Francisco development demo photo sources
+# HappyTrip showcase sources and credits
 
-These three photographs are licensed reference assets for a HappyTrip development style demonstration. They are not user travel photographs and do not establish a user's travel dates or route. Wikimedia-supplied 1280 px thumbnails were downloaded without local visual edits; poster use may resize and rotate them.
+These photographs are licensed reference assets for HappyTrip demonstrations. They are not private user travel photographs and do not establish a user's travel dates or route.
+
+## San Francisco photographs
+
+Wikimedia-supplied 1280 px thumbnails were downloaded without local visual edits; poster use may resize and rotate them.
 
 | Local asset | Landmark | Author and permission | Source page | Landmark coordinates |
 |---|---|---|---|---|
@@ -12,12 +16,23 @@ Coordinates identify the landmarks rather than camera positions. Sources were ch
 
 Suggested visible credit: **Photos: Wattewyl / Wikimedia Commons (CC BY 3.0); Daderot (CC0); DaveOinSF (public domain). Resized and arranged.** Keep a link to this credit record or the Commons file page and license with any shared derivative.
 
+## Paris photograph
+
+`louvre-source.jpg`: **Courtyard @ Louvre @ Paris**, by [Guilhem Vellut](https://www.flickr.com/people/22539273@N00), licensed [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). [Wikimedia Commons file page](https://commons.wikimedia.org/wiki/File:Courtyard_@_Louvre_@_Paris_(28897294980).jpg) · [original Flickr page](https://www.flickr.com/photos/o_0/28897294980/).
+
+The original 5472×3648 photograph was resized to 1600×1067 (JPEG quality 95), without cropping or semantic changes. The Commons license and original-source review were checked on 2026-10-02. Exact file hashes and the source revision are in [louvre-source.json](louvre-source.json).
+
+Suggested visible credit: **Courtyard @ Louvre @ Paris — Guilhem Vellut / Wikimedia Commons, CC BY 2.0. Source resized; edited examples additionally remove tourists and reconstruct the underlying paving.** Retain the author, source and license with shared derivatives.
+
 ## Basemap
 
 The poster uses the public [USGS The National Map / USGSTopo service](https://basemap.nationalmap.gov/arcgis/rest/services/USGSTopo/MapServer). Map credit: USGS The National Map. The raster is georeferenced in Web Mercator. Dashed connections indicate landmark associations, not roads, navigation instructions, or an actual trip.
 
 ## README derivatives
 
+- `a01-cleanup.png`: tourist removal and inferred ground reconstruction from Guilhem Vellut's Louvre photograph, [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/). A generated lower region was masked onto the resized original; source and upper architecture retained. This is a modified derivative, not an unedited record of an empty courtyard.
+- `a02-natural-light.png`: AI light/color editing of Wattewyl's Golden Gate Bridge photograph, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/). Shadows and color were modified; fine texture may be reinterpreted. Not a pixel-preserving color correction.
+- `b01-magnet-poster.png`: generated souvenir interpretation of Wattewyl's Golden Gate Bridge photograph, [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), composited with a proportionally resized complete source photo and text. Imagined magnet, not an existing product.
 - `a05-watercolor-postcard.png`: generated watercolor interpretation of Wattewyl's Golden Gate Bridge photograph, using the built-in image tool. Modified from the original; original photograph licensed [CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), source linked above. This is an intentionally text-free postcard.
 - `b04-travel-globe.png`: generated glass-globe interpretation of Daderot's Pier 39 photograph (CC0). This is an imagined souvenir, not a photograph of an existing product.
 - `b22-map-preview.png`: photographs resized and arranged over the USGS basemap; see map attribution above.

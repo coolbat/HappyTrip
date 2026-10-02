@@ -1,0 +1,28 @@
+{
+  "id": "cleanup-louvre-courtyard",
+  "original_title": "Courtyard @ Louvre @ Paris (28897294980).jpg",
+  "commons_page": "https://commons.wikimedia.org/wiki/File:Courtyard_@_Louvre_@_Paris_(28897294980).jpg",
+  "commons_revision_url": "https://commons.wikimedia.org/w/index.php?title=File:Courtyard_@_Louvre_@_Paris_(28897294980).jpg&oldid=899953130",
+  "author": "Guilhem Vellut",
+  "author_url": "https://www.flickr.com/people/22539273@N00",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0/",
+  "original_file_url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Courtyard_%40_Louvre_%40_Paris_%2828897294980%29.jpg",
+  "original_source_url": "https://www.flickr.com/photos/o_0/28897294980/",
+  "original_dimensions": [
+    5472,
+    3648
+  ],
+  "original_sha256": "b8b72987c2e0b1977bac177ab7bae25cdc8cce3f85984478515a9a4195a622be",
+  "local_source_file": "louvre-source.jpg",
+  "local_source_dimensions": [
+    1600,
+    1067
+  ],
+  "local_source_sha256": "e7549aba2faf7a2c973b9f8e74d2996b740e5af46ccc5bc2441dc620981d786f",
+  "source_modifications": "Downsized to 1600px wide, JPEG quality 95; no semantic edits or crop.",
+  "commons_license_review": "FlickreviewR confirmed CC BY 2.0 on 2016-09-02; Commons file page checked 2026-10-02.",
+  "identity": "Publicly licensed demonstration material; not a user travel photo.",
+  "visual_review": "Viewed the downloaded 1600px file. Louvre courtyard with the glass pyramid amid historic facades, late-day sun, cobblestone paving; visible tourists throughout bottom third and distant queues. Foreground distinct groups at x=80-160,y=740-845; x=250-280,y=740-838; x=429-570,y=728-852; x=684-720,y=743-832; x=820-870,y=730-843; x=1202-1352,y=727-890. Remove people and their associated cast shadows while retaining architecture, pyramid, equestrian statue, barriers, fixed objects, paving perspective and ambient building shadows.",
+  "attribution_line": "Courtyard @ Louvre @ Paris — Guilhem Vellut / Wikimedia Commons, CC BY 2.0. Source resized; edited examples additionally remove tourists and reconstruct the underlying paving."
+}

@@ -2,12 +2,104 @@
   "date": "2026-10-02",
   "purpose": "README showcase",
   "host_tool": "built-in image_gen",
-  "native_image_calls_this_run": 3,
-  "accepted_native_images": 2,
-  "rejected_native_images": 1,
   "user_art_acceptance": "pending",
   "scope": "Individual publicly sourced examples; not the complete 18-mode visual acceptance matrix.",
   "cases": [
+    {
+      "mode": "A01",
+      "source": {
+        "file": "docs/examples/louvre-source.jpg",
+        "sha256": "e7549aba2faf7a2c973b9f8e74d2996b740e5af46ccc5bc2441dc620981d786f",
+        "size": [
+          1600,
+          1067
+        ]
+      },
+      "output": {
+        "file": "docs/examples/a01-cleanup.png",
+        "sha256": "ac6bdfbb40d6fa26b7b5f28b6234d59c34c2d0fe46a8b9a2b3c919cdbf6ea8c4",
+        "size": [
+          1600,
+          1067
+        ]
+      },
+      "method": "Native image candidate plus deterministic masked composition of the tourist-bearing lower region.",
+      "visual_review": "pass_for_showcase",
+      "independent_agent_review": "pass",
+      "observations": [
+        "Visible tourists removed; equestrian statue retained.",
+        "No obvious seams at showcase scale.",
+        "Source rows 0 through 703 preserved; reconstructed lower paving and rails are inferred."
+      ],
+      "composition_record": "docs/examples/composition-records.json",
+      "effective_mask": {
+        "file": "docs/examples/a01-cleanup-effective-mask.png",
+        "sha256": "432e6c5263456b1507ddf3210fb6368ec4ae9ca7a462a519ccc43784305aad2b",
+        "size": [
+          1600,
+          1067
+        ]
+      },
+      "source_credit": "Guilhem Vellut / Wikimedia Commons / CC BY 2.0; resized and edited derivative."
+    },
+    {
+      "mode": "A02",
+      "source": {
+        "file": "docs/examples/golden-gate-source.jpg",
+        "sha256": "842aaf635c2220335089250f6bf155a007ff82dcf3353fe3e08e25262845f091",
+        "size": [
+          1280,
+          960
+        ]
+      },
+      "output": {
+        "file": "docs/examples/a02-natural-light.png",
+        "sha256": "2018c377d1680139602072f71e4d7a09ce63495d1fe3cc18bdb709ef86b45fbf",
+        "size": [
+          1448,
+          1086
+        ]
+      },
+      "method": "Native image tool, reference-based tonal and color edit.",
+      "visual_review": "accepted_with_warning_for_showcase",
+      "strict_photo_fidelity_acceptance": "not_passed",
+      "independent_agent_review": "accepted_with_same_warning",
+      "observations": [
+        "Foreground shadows opened and color separation improved.",
+        "No new clouds or obvious new objects observed; overall composition retained.",
+        "Fine foliage, water and distant-city textures may be reinterpreted; not pixel-preserving correction."
+      ],
+      "source_credit": "Wattewyl / Wikimedia Commons / CC BY 3.0; AI edited derivative."
+    },
+    {
+      "mode": "B01",
+      "source": {
+        "file": "docs/examples/golden-gate-source.jpg",
+        "sha256": "842aaf635c2220335089250f6bf155a007ff82dcf3353fe3e08e25262845f091",
+        "size": [
+          1280,
+          960
+        ]
+      },
+      "output": {
+        "file": "docs/examples/b01-magnet-poster.png",
+        "sha256": "0f37bf8259eff8d18048f1ef5d732afaae36e56557ed40ffeebe9608c27986ad",
+        "size": [
+          1200,
+          1600
+        ]
+      },
+      "method": "Native transparent souvenir asset plus deterministic B01 original-photo and text composition.",
+      "visual_review": "pass_for_showcase",
+      "independent_agent_review": "pass",
+      "observations": [
+        "Visible magnet relief, thickness and shadow.",
+        "Complete source photo appears below, resized without cropping or semantic edits.",
+        "Chinese typography composed as exact text, not generated image text."
+      ],
+      "composition_record": "docs/examples/composition-records.json",
+      "source_credit": "Wattewyl / Wikimedia Commons / CC BY 3.0; creative derivative with resized original."
+    },
     {
       "mode": "A05",
       "source": {
@@ -83,6 +175,28 @@
     {
       "mode": "A02",
       "reason": "Output added sky texture, outside exposure/color-only scope. Candidate retained locally and excluded from repository."
+    },
+    {
+      "mode": "A02",
+      "run": "common-scenarios-expansion",
+      "source": "docs/examples/pier39-source.jpg",
+      "reason": "Tiny distant people and texture were smoothed/redrawn. Retained locally, excluded from repository; retried with unoccupied landscape."
     }
-  ]
+  ],
+  "runs": [
+    {
+      "id": "initial-readme",
+      "native_image_calls": 3,
+      "accepted_native_images": 2,
+      "rejected_native_images": 1
+    },
+    {
+      "id": "common-scenarios-expansion",
+      "native_image_calls": 4,
+      "accepted_native_images": 3,
+      "rejected_native_images": 1,
+      "qualification": "A02 accepted only as an AI tonal-edit reference with an explicit fine-detail warning, not strict fidelity acceptance."
+    }
+  ],
+  "native_image_calls_total": 7
 }
