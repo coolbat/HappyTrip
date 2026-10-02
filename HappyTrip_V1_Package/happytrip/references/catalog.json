@@ -1,0 +1,450 @@
+{
+  "version": "1.0.0",
+  "status": "documentation_ready_visual_validation_pending",
+  "template_variables": [
+    "input_summary",
+    "target_summary",
+    "protected_summary",
+    "facts_summary",
+    "layout_summary",
+    "text_summary",
+    "mode_options_summary",
+    "extra_notes"
+  ],
+  "mode_count": 18,
+  "modes": [
+    {
+      "id": "A01",
+      "slug": "remove-tourists",
+      "name_zh": "消除背景游客",
+      "category": "Fix",
+      "edit_scope": "masked_edit",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "source",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          1,
+          2
+        ]
+      },
+      "mode_file": "modes/a01-remove-tourists.md",
+      "options": {
+        "target_required": true,
+        "preserve_companions": true
+      }
+    },
+    {
+      "id": "A02",
+      "slug": "relight",
+      "name_zh": "自动调光",
+      "category": "Fix",
+      "edit_scope": "global_adjust",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "source",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          2,
+          3,
+          4
+        ]
+      },
+      "mode_file": "modes/a02-relight.md",
+      "options": {
+        "natural_grade": true,
+        "optional_local_edits": []
+      },
+      "default_optional_retouch": false
+    },
+    {
+      "id": "A03",
+      "slug": "natural-retouch",
+      "name_zh": "专业美颜",
+      "category": "Fix",
+      "edit_scope": "masked_edit",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "source",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "mode_file": "modes/a03-natural-retouch.md",
+      "options": {
+        "makeup": false,
+        "reshape_face": false,
+        "preserve_marks": true
+      }
+    },
+    {
+      "id": "A04",
+      "slug": "polaroid-figure",
+      "name_zh": "拍立得 3D 公仔打卡",
+      "category": "Story",
+      "edit_scope": "reimagine",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "3:4",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          8
+        ]
+      },
+      "mode_file": "modes/a04-polaroid-figure.md",
+      "options": {
+        "figure_ratio": "1:4",
+        "material": "clay",
+        "frame": "instant_photo"
+      }
+    },
+    {
+      "id": "A05",
+      "slug": "watercolor-postcard",
+      "name_zh": "景点明信片",
+      "category": "Collect",
+      "edit_scope": "hybrid_layout",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "3:2",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          8,
+          9
+        ]
+      },
+      "mode_file": "modes/a05-watercolor-postcard.md",
+      "options": {
+        "artwork_share": 0.6,
+        "palette_count": 3,
+        "mockup": false
+      }
+    },
+    {
+      "id": "A06",
+      "slug": "in-place-sticker",
+      "name_zh": "画面主体转贴纸",
+      "category": "Play",
+      "edit_scope": "masked_edit",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "source",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          10
+        ]
+      },
+      "mode_file": "modes/a06-in-place-sticker.md",
+      "options": {
+        "target_required": true,
+        "white_die_cut_border": true
+      }
+    },
+    {
+      "id": "A07",
+      "slug": "suitcase-memories",
+      "name_zh": "旅游碎片行李箱",
+      "category": "Collect",
+      "edit_scope": "hybrid_layout",
+      "input_min": 2,
+      "input_max": 15,
+      "default_ratio": "4:3",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          11,
+          12
+        ]
+      },
+      "mode_file": "modes/a07-suitcase-memories.md",
+      "options": {
+        "reference_suitcase_optional": true,
+        "recommended_photo_count": "6–15"
+      },
+      "flat_stickers_only": true
+    },
+    {
+      "id": "A08",
+      "slug": "traveler-poster",
+      "name_zh": "人物旅游海报",
+      "category": "Story",
+      "edit_scope": "reimagine",
+      "input_min": 1,
+      "input_max": 8,
+      "default_ratio": "3:4",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          12,
+          13,
+          14
+        ]
+      },
+      "mode_file": "modes/a08-traveler-poster.md",
+      "options": {
+        "variant": "collage",
+        "variants": [
+          "collage",
+          "pet_road_trip"
+        ]
+      }
+    },
+    {
+      "id": "A09",
+      "slug": "concert-mood",
+      "name_zh": "演唱会氛围感照片",
+      "category": "Play",
+      "edit_scope": "reimagine",
+      "input_min": 1,
+      "input_max": 2,
+      "default_ratio": "3:4",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          15,
+          16,
+          17
+        ]
+      },
+      "mode_file": "modes/a09-concert-mood.md",
+      "options": {
+        "reconstruction_requires_explicit_mode": true,
+        "pose_preset": "preserve_or_user_selected"
+      }
+    },
+    {
+      "id": "A10",
+      "slug": "food-burst",
+      "name_zh": "美食炸弹",
+      "category": "Play",
+      "edit_scope": "masked_edit",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "source",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          17,
+          18
+        ]
+      },
+      "mode_file": "modes/a10-food-burst.md",
+      "options": {
+        "intensity": "medium",
+        "unverified_ingredients": false
+      }
+    },
+    {
+      "id": "A11",
+      "slug": "object-typography",
+      "name_zh": "指定物体转文字涂鸦",
+      "category": "Play",
+      "edit_scope": "masked_edit",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "source",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          19
+        ]
+      },
+      "mode_file": "modes/a11-object-typography.md",
+      "options": {
+        "bindings_required": true,
+        "per_target_single_color": true
+      }
+    },
+    {
+      "id": "A12",
+      "slug": "photo-doodles",
+      "name_zh": "ins 风画面注释",
+      "category": "Play",
+      "edit_scope": "overlay",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "source",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "article_adaptation",
+        "reference": "S1",
+        "pages": [
+          20
+        ]
+      },
+      "mode_file": "modes/a12-photo-doodles.md",
+      "options": {
+        "overlay_only": true,
+        "text_rendering": "compositor"
+      }
+    },
+    {
+      "id": "B01",
+      "slug": "magnet-poster",
+      "name_zh": "原片＋冰箱贴对照海报",
+      "category": "Collect",
+      "edit_scope": "hybrid_layout",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "3:4",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "approved_extension",
+        "reference": "S2",
+        "pages": []
+      },
+      "mode_file": "modes/b01-magnet-poster.md",
+      "options": {
+        "layout": "top_magnet_bottom_photo",
+        "top_share": 0.4,
+        "photo_fit": "contain"
+      },
+      "strict_original_requires_compositor": true
+    },
+    {
+      "id": "B03",
+      "slug": "paper-pop-up",
+      "name_zh": "立体纸雕明信片",
+      "category": "Collect",
+      "edit_scope": "reimagine",
+      "input_min": 1,
+      "input_max": 1,
+      "default_ratio": "4:3",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "approved_extension",
+        "reference": "S2",
+        "pages": []
+      },
+      "mode_file": "modes/b03-paper-pop-up.md",
+      "options": {
+        "material": "paper",
+        "manufacturing_ready": false
+      }
+    },
+    {
+      "id": "B04",
+      "slug": "travel-globe",
+      "name_zh": "旅行玻璃球／雪景球",
+      "category": "Collect",
+      "edit_scope": "reimagine",
+      "input_min": 1,
+      "input_max": 2,
+      "default_ratio": "1:1",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "approved_extension",
+        "reference": "S2",
+        "pages": []
+      },
+      "mode_file": "modes/b04-travel-globe.md",
+      "options": {
+        "variant": "clear_globe",
+        "snow": false,
+        "floating_particles": "none"
+      },
+      "default_snow": false
+    },
+    {
+      "id": "B14",
+      "slug": "double-exposure",
+      "name_zh": "人像双重曝光旅行海报",
+      "category": "Story",
+      "edit_scope": "reimagine",
+      "input_min": 1,
+      "input_max": 2,
+      "default_ratio": "3:4",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "approved_extension",
+        "reference": "S2",
+        "pages": []
+      },
+      "mode_file": "modes/b14-double-exposure.md",
+      "options": {
+        "silhouette": "auto_from_reference",
+        "landscape_from_reference": true
+      }
+    },
+    {
+      "id": "B16",
+      "slug": "travel-comic",
+      "name_zh": "旅行三格／四格漫画",
+      "category": "Story",
+      "edit_scope": "reimagine",
+      "input_min": 1,
+      "input_max": 4,
+      "default_ratio": "3:4",
+      "validation_priority": "P1",
+      "source": {
+        "kind": "approved_extension",
+        "reference": "S2",
+        "pages": []
+      },
+      "mode_file": "modes/b16-travel-comic.md",
+      "options": {
+        "panel_count": 4,
+        "allowed_panel_counts": [
+          3,
+          4
+        ],
+        "story_basis": "user_provided_or_explicit_fiction"
+      }
+    },
+    {
+      "id": "B22",
+      "slug": "route-photo-map",
+      "name_zh": "路线照片地图",
+      "category": "Collect",
+      "edit_scope": "hybrid_layout",
+      "input_min": 2,
+      "input_max": 15,
+      "default_ratio": "3:4",
+      "validation_priority": "P0",
+      "source": {
+        "kind": "approved_extension",
+        "reference": "S2",
+        "pages": []
+      },
+      "mode_file": "modes/b22-route-photo-map.md",
+      "options": {
+        "map_mode": "itinerary_schematic",
+        "known_order_required_for_edges": true,
+        "show_schematic_label": true
+      },
+      "needs_confirmed_order": true
+    }
+  ]
+}

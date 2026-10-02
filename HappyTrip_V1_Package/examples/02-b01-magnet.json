@@ -1,0 +1,38 @@
+{
+  "example_only": true,
+  "schema_version": "happytrip-internal-1.0",
+  "note": "内部数据结构示例；素材 ID 是示意值，不是可调用的实际文件引用。",
+  "mode": "B01",
+  "photos": [
+    {
+      "photo_id": "example-photo-01",
+      "ref": null,
+      "roles": [
+        "base",
+        "person",
+        "scene"
+      ]
+    }
+  ],
+  "targets": [],
+  "protected": [],
+  "facts": [],
+  "output": {
+    "ratio": "3:4",
+    "language": "zh",
+    "caption": false
+  },
+  "budget": {
+    "max_image_calls": 4,
+    "max_repairs_per_stage": 1
+  },
+  "mode_options": {
+    "layout": "top_magnet_bottom_photo",
+    "photo_fit": "contain"
+  },
+  "user_goal": "上面冰箱贴，下面原片，照片不要重绘",
+  "edit_contract": {
+    "strict_original": true,
+    "scope": "hybrid_layout"
+  }
+}

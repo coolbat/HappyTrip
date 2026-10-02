@@ -1,0 +1,28 @@
+{
+  "example_only": true,
+  "note": "仅适用于用户明确要求本地合成的任务；此示例本身不是授权。将 ref 替换为真实本地照片绝对路径，并核实可用能力。",
+  "mode": "B01",
+  "user_goal": "生成上方冰箱贴，用本地 Python 把下方原照片完整合成进去，不重绘原片。",
+  "photos": [
+    {"photo_id": "p01", "ref": null, "roles": ["base", "scene"]}
+  ],
+  "targets": [],
+  "protected": [],
+  "facts": [],
+  "output": {"ratio": "3:4", "language": "zh", "caption": false},
+  "mode_options": {"layout": "top_magnet_bottom_photo", "photo_fit": "contain"},
+  "edit_contract": {"scope": "hybrid_layout", "strict_original": true},
+  "budget": {"max_image_calls": 4, "max_repairs_per_stage": 1},
+  "capabilities": {
+    "vision": true,
+    "image_generation": true,
+    "image_editing": true,
+    "masked_editing": false,
+    "multiple_references": true,
+    "transparent_assets": true,
+    "local_composition": true,
+    "exact_text_rendering": true,
+    "geographic_rendering": false,
+    "max_reference_images": null
+  }
+}

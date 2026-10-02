@@ -1,0 +1,169 @@
+{
+  "date": "2026-10-02",
+  "program_tests": {
+    "status": "pass",
+    "count": 111,
+    "log": "checks/b22-map-correction-unittest.log"
+  },
+  "native_image_tool_e2e": "not_run_in_this_validation",
+  "real_image_calls": 0,
+  "modes": [
+    {
+      "id": "A01",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A02",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A03",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A04",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A05",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A06",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A07",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A08",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A09",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A10",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A11",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "A12",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "B01",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "B03",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "B04",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "B14",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "B16",
+      "priority": "P1",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "not_run"
+    },
+    {
+      "id": "B22",
+      "priority": "P0",
+      "typical": "not_run",
+      "boundary": "not_run",
+      "conflict": "not_run",
+      "visual_status": "development_preview_reviewed",
+      "full_visual_matrix": "not_run"
+    }
+  ],
+  "initial_snapshot_date": "2026-09-29",
+  "validation_scope": "B22 1.1.1 real basemap with licensed landmark photos; other mode visual entries retain initial matrix status",
+  "b22_upgrade": {
+    "version": "1.1.1",
+    "real_photo_layout": "reviewed_public_landmark_photo_preview",
+    "geographic_fixture": "reviewed_USGS_basemap_with_licensed_real_landmark_photos",
+    "user_art_acceptance": "pending",
+    "native_image_calls": 0,
+    "report": "checks/B22-MAP-CORRECTION.md",
+    "preview": "outputs/b22-map-correction/san-francisco-map-poster.png",
+    "previous_schematic_preview": "does_not_satisfy_real_map_request"
+  }
+}

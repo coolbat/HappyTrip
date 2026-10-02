@@ -1,0 +1,74 @@
+{
+  "example_only": true,
+  "schema_version": "happytrip-internal-1.0",
+  "note": "内部数据结构示例；素材 ID 是示意值，不是可调用的实际文件引用。",
+  "mode": "B22",
+  "photos": [
+    {
+      "photo_id": "example-photo-01",
+      "ref": null,
+      "roles": [
+        "scene"
+      ]
+    },
+    {
+      "photo_id": "example-photo-02",
+      "ref": null,
+      "roles": [
+        "scene"
+      ]
+    },
+    {
+      "photo_id": "example-photo-03",
+      "ref": null,
+      "roles": [
+        "scene"
+      ]
+    }
+  ],
+  "targets": [],
+  "protected": [],
+  "facts": [],
+  "output": {
+    "ratio": "3:4",
+    "language": "zh",
+    "caption": false
+  },
+  "budget": {
+    "max_image_calls": 4,
+    "max_repairs_per_stage": 1
+  },
+  "mode_options": {
+    "map_mode": "itinerary_schematic",
+    "stops": [
+      {
+        "id": "s1",
+        "name": "站点甲",
+        "photo_ids": [
+          "example-photo-01"
+        ]
+      },
+      {
+        "id": "s2",
+        "name": "站点乙",
+        "photo_ids": [
+          "example-photo-02"
+        ]
+      },
+      {
+        "id": "s3",
+        "name": "站点丙",
+        "photo_ids": [
+          "example-photo-03"
+        ]
+      }
+    ],
+    "ordered_stop_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ],
+    "order_confirmed": true,
+    "show_schematic_label": true
+  }
+}

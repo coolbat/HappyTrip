@@ -1,0 +1,27 @@
+{
+  "example_only": true,
+  "note": "结构示例：将 ref 替换为真实本地照片的绝对路径，核实当前宿主能力后再准备任务。",
+  "mode": "A02",
+  "user_goal": "只自然调光，保持照片内容、人物与构图，不额外美颜或换天空。",
+  "photos": [
+    {"photo_id": "p01", "ref": null, "roles": ["base", "scene"]}
+  ],
+  "targets": [],
+  "protected": [],
+  "facts": [],
+  "output": {"ratio": "source", "language": "zh", "caption": false},
+  "mode_options": {},
+  "budget": {"max_image_calls": 4, "max_repairs_per_stage": 1},
+  "capabilities": {
+    "vision": true,
+    "image_generation": true,
+    "image_editing": true,
+    "masked_editing": false,
+    "multiple_references": true,
+    "transparent_assets": true,
+    "local_composition": false,
+    "exact_text_rendering": false,
+    "geographic_rendering": false,
+    "max_reference_images": null
+  }
+}

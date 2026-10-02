@@ -1,0 +1,17 @@
+{
+  "date": "2026-10-02",
+  "version": "1.1.1",
+  "installed_path": "~/.codex/skills/happytrip",
+  "source_path": "happytrip",
+  "installation_kind": "symlink",
+  "package_path": "dist/happytrip.skill",
+  "package_files": 51,
+  "package_sha256": "460f70aed6b92e4f0185f896065cfe3f012d1e1ed7af9c9e7fb65d6e900cdd9e",
+  "links": "pass",
+  "archive_doctor": "pass",
+  "archive_catalog_modes": 18,
+  "archive_map_basemap_cli": "pass",
+  "archive_skill_validation": "pass",
+  "native_session_discovery": "already_listed_in_current_skill_catalog",
+  "path_note": "Project paths are relative to the repository; original machine-specific record retained locally."
+}

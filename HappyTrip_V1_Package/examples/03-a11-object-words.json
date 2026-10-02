@@ -1,0 +1,46 @@
+{
+  "example_only": true,
+  "schema_version": "happytrip-internal-1.0",
+  "note": "内部数据结构示例；素材 ID 是示意值，不是可调用的实际文件引用。",
+  "mode": "A11",
+  "photos": [
+    {
+      "photo_id": "example-photo-01",
+      "ref": null,
+      "roles": [
+        "base",
+        "person",
+        "scene"
+      ]
+    }
+  ],
+  "targets": [],
+  "protected": [],
+  "facts": [],
+  "output": {
+    "ratio": "source",
+    "language": "zh",
+    "caption": false
+  },
+  "budget": {
+    "max_image_calls": 4,
+    "max_repairs_per_stage": 1
+  },
+  "mode_options": {
+    "object_words": [
+      {
+        "photo_id": "example-photo-01",
+        "target": "第一把椅子",
+        "word": "Chair",
+        "color": "white"
+      },
+      {
+        "photo_id": "example-photo-01",
+        "target": "椅子上的猫玩偶",
+        "word": "Cat",
+        "color": "brown"
+      }
+    ]
+  },
+  "user_goal": "把椅子和猫玩偶分别变成文字"
+}

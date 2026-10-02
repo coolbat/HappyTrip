@@ -1,0 +1,44 @@
+{
+  "example_only": true,
+  "note": "格式示例，不代表真实旅程或当前授权。替换照片路径、地点、标题和顺序；只有实际确认顺序后才保留 order_confirmed:true。用户未确认顺序时改 unordered_places 并清空 ordered_stop_ids。",
+  "mode": "B22",
+  "user_goal": "用本地脚本把我的原照片排成旅行地图海报，保留照片内容。",
+  "photos": [
+    {"photo_id": "p01", "ref": null, "roles": ["scene"]},
+    {"photo_id": "p02", "ref": null, "roles": ["scene"]},
+    {"photo_id": "p03", "ref": null, "roles": ["scene"]}
+  ],
+  "targets": [],
+  "protected": [],
+  "facts": [],
+  "output": {"ratio": "3:4", "language": "zh", "caption": false},
+  "mode_options": {
+    "template": "travel_poster",
+    "map_mode": "itinerary_schematic",
+    "title": "旅行记忆",
+    "subtitle": "沿途风景",
+    "stops": [
+      {"id": "s01", "name": "地点一", "photo_ids": ["p01"]},
+      {"id": "s02", "name": "地点二", "photo_ids": ["p02"]},
+      {"id": "s03", "name": "地点三", "photo_ids": ["p03"]}
+    ],
+    "ordered_stop_ids": ["s01", "s02", "s03"],
+    "order_confirmed": true,
+    "show_schematic_label": true,
+    "footer": []
+  },
+  "edit_contract": {"scope": "hybrid_layout", "strict_original": true},
+  "budget": {"max_image_calls": 4, "max_repairs_per_stage": 1},
+  "capabilities": {
+    "vision": true,
+    "image_generation": false,
+    "image_editing": false,
+    "masked_editing": false,
+    "multiple_references": false,
+    "transparent_assets": false,
+    "local_composition": true,
+    "exact_text_rendering": true,
+    "geographic_rendering": false,
+    "max_reference_images": null
+  }
+}

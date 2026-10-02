@@ -1,0 +1,4 @@
+interface:
+  display_name: "HappyTrip"
+  short_description: "将旅行照片修整、制作明信片、纪念海报、漫画和行程照片图"
+  default_prompt: "请用 $happytrip 根据我提供的旅行照片和目标，选择合适玩法并完成制作。"

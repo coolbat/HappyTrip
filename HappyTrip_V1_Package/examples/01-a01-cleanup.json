@@ -1,0 +1,41 @@
+{
+  "example_only": true,
+  "schema_version": "happytrip-internal-1.0",
+  "note": "内部数据结构示例；素材 ID 是示意值，不是可调用的实际文件引用。",
+  "mode": "A01",
+  "photos": [
+    {
+      "photo_id": "example-photo-01",
+      "ref": null,
+      "roles": [
+        "base",
+        "person",
+        "scene"
+      ]
+    }
+  ],
+  "targets": [
+    {
+      "photo_id": "example-photo-01",
+      "description": "右后方已由用户指认的路人"
+    }
+  ],
+  "protected": [
+    {
+      "photo_id": "example-photo-01",
+      "description": "中间两位同行者"
+    }
+  ],
+  "facts": [],
+  "output": {
+    "ratio": "source",
+    "language": "zh",
+    "caption": false
+  },
+  "budget": {
+    "max_image_calls": 4,
+    "max_repairs_per_stage": 1
+  },
+  "mode_options": {},
+  "user_goal": "保留中间两位同行者，移除右后方路人"
+}

@@ -1,0 +1,59 @@
+{
+  "cases": [
+    {
+      "case": "schematic",
+      "plan": "ready",
+      "image_calls": 0,
+      "photo_ids": [
+        "p01",
+        "p02",
+        "p03"
+      ],
+      "size": [
+        1500,
+        2000
+      ],
+      "map_mode": "itinerary_schematic",
+      "label": "行程示意，非比例地图",
+      "output": "schematic/poster.png",
+      "manifest": "schematic/poster.png.json"
+    },
+    {
+      "case": "geographic",
+      "plan": "ready",
+      "image_calls": 0,
+      "photo_ids": [
+        "p01",
+        "p02",
+        "p03"
+      ],
+      "size": [
+        1500,
+        2000
+      ],
+      "map_mode": "geographic",
+      "label": "规划路线；虚线为站点连线",
+      "output": "geographic/poster.png",
+      "manifest": "geographic/poster.png.json"
+    }
+  ],
+  "raster_registration": "pass",
+  "input_hashes_unchanged": true,
+  "commands": "commands.json",
+  "visual_review": {
+    "status": "pass_for_development_fixtures",
+    "reviewed_outputs": [
+      "schematic/poster.png",
+      "geographic/poster.png"
+    ],
+    "observations": [
+      "Three source fixtures appear in the tilted top cards and numbered side cards.",
+      "Chinese title, map labels, attribution and optional footer are readable and not clipped.",
+      "Schematic mode prominently states non-scale itinerary.",
+      "Geographic mode differentiates one solid planned segment from one dashed station association.",
+      "No date, distance or weather was invented."
+    ],
+    "scope": "Synthetic images and geometry only; this does not validate real journey facts or all HappyTrip modes."
+  },
+  "artifact_path_base": "temporary development workflow directory; original absolute paths retained locally"
+}
